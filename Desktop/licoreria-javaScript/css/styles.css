@@ -1,0 +1,294 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #004481;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos específicos para la página de inicio */
+#hero {
+    background-image: url('../images/hero-bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+#hero .hero-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#hero .hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+/* Estilos para productos destacados en index.html */
+#featured-products .product-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#featured-products .product {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#featured-products .product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#featured-products .product img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#featured-products .product:hover img {
+    transform: scale(1.1);
+}
+
+#featured-products .product h3 {
+    margin-top: 10px;
+    color: #004481;
+    font-size: 18px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Añadir sombra de colores a los productos */
+#featured-products .product {
+    box-shadow: 0px 0px 15px rgba(0, 204, 255, 0.6);
+}
+
+/* Estilos para la página de productos */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.product {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    flex: 1 0 30%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product h3 {
+    font-size: 18px;
+    color: #004481;
+    margin-top: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Formulario de Pago */
+#payment-section {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilos para la tarjeta de pago */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #004481;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.card-details-row {
+    display: flex;
+    gap: 10px;
+}
+
+.card-details-row label {
+    flex: 1;
+}
+
+.card-details-row input {
+    flex: 2;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button#save-card-btn {
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    #hero {
+        padding: 20px;
+    }
+
+    #hero .hero-text h2 {
+        font-size: 28px;
+    }
+
+    .product-list {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #hero .hero-text h2 {
+        font-size: 24px;
+    }
+
+    #products .product, 
+    #featured-products .product {
+        width: 100%;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licorería en Línea - Productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <h1>Nuestros Productos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Catálogo de Productos</h2>
+            <div class="search-filter">
+                <input type="text" id="search" placeholder="Buscar productos...">
+                <select id="filter">
+                    <option value="all">Todos</option>
+                    <option value="whisky">Whisky</option>
+                    <option value="vino">Vino</option>
+                    <option value="ron">Ron</option>
+                    <option value="tequila">Tequila</option>
+                    <option value="cerveza">Cerveza</option>
+                    <option value="vodka">Vodka</option>
+                </select>
+            </div>
+            <div class="product-list">
+                <!-- productos -->
+            </div>
+            <div id="cart" class="cart">
+                <h2>Carrito de Compras</h2>
+                <ul id="cart-items">
+                    <!-- carrito -->
+                </ul>
+                <p id="total-price">Total: $0</p>
+                <button id="checkout-btn">Proceder al Pago</button>
+            </div>
+        </section>
+
+        <!-- Sección de Métodos de Pago -->
+        <section id="payment-section" class="hidden">
+            <h2>Pago</h2>
+            <label for="payment-method">Método de Pago</label>
+            <select id="payment-method">
+                <option value="tarjeta">Tarjeta de Crédito</option>
+                <option value="transferencia">Transferencia Bancaria</option>
+                <option value="efectivo">Pago en Efectivo</option>
+                <option value="link_pago">Pago con Link</option>
+            </select>
+
+            <div id="card-details" class="hidden">
+                <div class="card-container">
+                    <div class="card-details-row">
+                        <label for="card-number">Número de la Tarjeta</label>
+                        <input type="text" id="card-number" name="card-number" maxlength="19" placeholder="XXXX XXXX XXXX XXXX">
+                    </div>
+                    <div class="card-details-row">
+                        <label for="card-name">Nombre</label>
+                        <input type="text" id="card-name" name="card-name" placeholder="Nombre">
+                        <label for="card-surname">Apellido</label>
+                        <input type="text" id="card-surname" name="card-surname" placeholder="Apellido">
+                    </div>
+                    <div class="card-details-row">
+                        <label for="expiry-date">Fecha de Expiración</label>
+                        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" maxlength="5">
+                        <label for="cvv">CVC/CVV</label>
+                        <input type="text" id="cvv" name="cvv" maxlength="4" placeholder="XXX">
+                    </div>
+                    <button id="save-card-btn">Guardar</button>
+                </div>
+            </div>
+
+            <div id="bank-details" class="hidden">
+                <label for="bank-name">Banco</label>
+                <select id="bank-name" name="bank-name">
+                    <option value="mercantil">Mercantil</option>
+                    <option value="banesco">Banesco</option>
+                    <option value="provincial">Provincial</option>
+                </select>
+
+                <label for="account-number">Número de Cuenta</label>
+                <input type="text" id="account-number" name="account-number">
+
+                <label for="account-name">Nombre del Titular</label>
+                <input type="text" id="account-name" name="account-name">
+            </div>
+
+            <div id="cash-details" class="hidden">
+                <p>El pago en efectivo se realizará al momento de la entrega del producto.</p>
+            </div>
+
+            <div id="link-payment" class="hidden">
+                <p>Haz clic en el botón para proceder con el pago:</p>
+                <script src="https://www.mercadopago.com.pe/integrations/v1/web-payment-checkout.js"
+                    data-preference-id="534068247-22cf070a-efee-4d7b-ac3e-da45f3b9c057" data-source="button">
+                </script>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px;">
+                <button id="confirm-payment-btn" style="font-size: 18px; padding: 10px 20px;">Confirmar Pago</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Licorería en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

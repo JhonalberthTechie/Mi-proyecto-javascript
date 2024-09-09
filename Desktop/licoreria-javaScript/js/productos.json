@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Whisky",
+        "price": 20,
+        "description": "Whisky de alta calidad",
+        "category": "whisky",
+        "image": "images/Whisky1.jpeg"
+    },
+    {
+        "name": "Vino",
+        "price": 10,
+        "description": "Vino tinto",
+        "category": "vino",
+        "image": "images/vino1.jpeg"
+    },
+    {
+        "name": "Ron",
+        "price": 15,
+        "description": "Ron caribeño",
+        "category": "ron",
+        "image": "images/ron1.jpeg"
+    },
+    {
+        "name": "Tequila",
+        "price": 25,
+        "description": "Tequila reposado",
+        "category": "tequila",
+        "image": "images/tequila1.jpeg"
+    },
+    {
+        "name": "Cerveza",
+        "price": 5,
+        "description": "Cerveza artesanal",
+        "category": "cerveza",
+        "image": "images/cerveza1.jpeg"
+    },
+    {
+        "name": "Vodka",
+        "price": 18,
+        "description": "Vodka premium",
+        "category": "vodka",
+        "image": "images/vodka1.jpeg"
+    }
+]
